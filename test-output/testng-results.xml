@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48200" started-at="2022-04-19T00:39:43 EDT" finished-at="2022-04-19T00:40:31 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48200" started-at="2022-04-19T00:39:43 EDT" finished-at="2022-04-19T00:40:31 EDT">
+      <class name="test.AddCustomerTestTest">
+        <test-method status="PASS" signature="validUserShouldBeAbleToCreateCustomer()[pri:0, instance:test.AddCustomerTestTest@2833cc44]" name="validUserShouldBeAbleToCreateCustomer" duration-ms="46469" started-at="2022-04-19T00:39:43 EDT" finished-at="2022-04-19T00:40:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserShouldBeAbleToCreateCustomer -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.AddCustomerTestTest@2833cc44]" name="teardown" is-config="true" duration-ms="1680" started-at="2022-04-19T00:40:29 EDT" finished-at="2022-04-19T00:40:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.AddCustomerTestTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

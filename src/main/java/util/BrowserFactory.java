@@ -1,0 +1,41 @@
+package util;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BrowserFactory {
+	
+	static WebDriver driver;
+	static String browser ="chrome";
+	static String url = "https://techfios.com/billing/?ng=admin/";
+	
+	public static WebDriver init() {
+	
+	if(browser.equalsIgnoreCase("chrome")) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\okikiade\\NewOctoberSelenium\\session5b_TestNG\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+	}else if(browser.equalsIgnoreCase("firefox")){
+		
+		System.setProperty("webdriver.gecko.driver", "driver\\geckodriver.exe");
+		driver = new FirefoxDriver();
+	}
+			
+	driver.manage().deleteAllCookies();
+	driver.get(url);
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	return driver;
+
+}
+
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}	
+	
+
+}

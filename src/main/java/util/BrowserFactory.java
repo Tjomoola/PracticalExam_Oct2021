@@ -10,12 +10,12 @@ public class BrowserFactory {
 	
 	static WebDriver driver;
 	static String browser ="chrome";
-	static String url = "https://techfios.com/billing/?ng=admin/";
+	static String url = "http://techfios.com/test/101/";
 	
 	public static WebDriver init() {
 	
 	if(browser.equalsIgnoreCase("chrome")) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\okikiade\\NewOctoberSelenium\\session5b_TestNG\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\okikiade\\NewOctoberSelenium\\PracticalExam_POM\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}else if(browser.equalsIgnoreCase("firefox")){

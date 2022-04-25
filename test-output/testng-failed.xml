@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.ListCustomerTestTest">
+      <class name="test.ToggleBottun">
         <methods>
-          <include name="validUserShouldBeAbleToListCustomer"/>
           <include name="teardown"/>
+          <include name="UserShouldBeableToRemoveSingleListItem"/>
         </methods>
-      </class> <!-- test.ListCustomerTestTest -->
+      </class> <!-- test.ToggleBottun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

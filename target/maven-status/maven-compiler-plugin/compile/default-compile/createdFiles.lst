@@ -1,6 +1,3 @@
-page\ListCustomerPage.class
-page\AddCustomerPage.class
+page\NSSTODOListPage.class
 util\BrowserFactory.class
 page\BasePage.class
-page\DashboardPage.class
-page\LoginPage.class
